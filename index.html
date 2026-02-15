@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전석진 - KT IT 관리자</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card-container">
+        <div class="business-card">
+            <div class="card-inner">
+                <!-- 캐릭터 얼굴 -->
+                <div class="avatar-wrapper">
+                    <svg class="character-face" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <!-- 머리카락 - 입체감 있는 그라데이션 -->
+                            <linearGradient id="hairGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#3d3428"/>
+                                <stop offset="40%" style="stop-color:#2a2218"/>
+                                <stop offset="100%" style="stop-color:#1a1510"/>
+                            </linearGradient>
+                            <linearGradient id="hairHighlight" x1="30%" y1="0%" x2="70%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4a3f30; stop-opacity:0.8"/>
+                                <stop offset="100%" style="stop-color:transparent"/>
+                            </linearGradient>
+                            <!-- 피부 - 자연스러운 한국인 톤 -->
+                            <linearGradient id="skinGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f0d4b8"/>
+                                <stop offset="30%" style="stop-color:#e5c4a4"/>
+                                <stop offset="70%" style="stop-color:#d4a574"/>
+                                <stop offset="100%" style="stop-color:#c4956a"/>
+                            </linearGradient>
+                            <radialGradient id="cheekHighlight" cx="35%" cy="55%" r="40%">
+                                <stop offset="0%" style="stop-color:#f5e0cc; stop-opacity:0.4"/>
+                                <stop offset="100%" style="stop-color:transparent"/>
+                            </radialGradient>
+                            <radialGradient id="cheekHighlightR" cx="65%" cy="55%" r="40%">
+                                <stop offset="0%" style="stop-color:#f5e0cc; stop-opacity:0.4"/>
+                                <stop offset="100%" style="stop-color:transparent"/>
+                            </radialGradient>
+                            <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                                <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.15"/>
+                            </filter>
+                        </defs>
+                        <!-- 목 & 셔츠 칼라 (프로페셔널 룩) -->
+                        <path d="M 55 195 L 55 220 L 145 220 L 145 195 Q 100 205 55 195 Z" fill="#2d2a26" filter="url(#softShadow)"/>
+                        <path d="M 70 195 L 70 218 L 130 218 L 130 195 Q 100 200 70 195 Z" fill="#3d3a36"/>
+                        <!-- 얼굴 윤곽: 턱 좁은 세련된 남성형 -->
+                        <path d="M 100 42 C 148 48 168 88 163 128 C 158 172 142 192 100 198 C 58 192 42 172 37 128 C 32 88 52 48 100 42 Z" fill="url(#skinGradient)" stroke="#c9a882" stroke-width="1.5" filter="url(#softShadow)"/>
+                        <!-- 광대 하이라이트 -->
+                        <ellipse cx="72" cy="155" rx="18" ry="22" fill="url(#cheekHighlight)"/>
+                        <ellipse cx="128" cy="155" rx="18" ry="22" fill="url(#cheekHighlightR)"/>
+                        <!-- 머리카락: 짧고 위로 빗어넘긴 스타일 (슬릭하게) -->
+                        <path d="M 48 50 Q 52 18 100 12 Q 148 18 152 50 L 156 78 Q 152 88 100 90 Q 48 88 44 78 Z" fill="url(#hairGradient)"/>
+                        <path d="M 48 50 Q 52 18 100 12 Q 148 18 152 50 L 156 78 Q 152 88 100 90 Q 48 88 44 78 Z" fill="url(#hairHighlight)"/>
+                        <path d="M 58 82 Q 100 62 142 82 L 144 96 Q 100 78 56 96 Z" fill="url(#hairGradient)"/>
+                        <path d="M 55 65 Q 100 55 145 65" stroke="#2a2218" stroke-width="1" fill="none" opacity="0.6"/>
+                        <!-- 눈썹 - 날카롭고 세련되게 -->
+                        <path d="M 66 116 Q 82 110 96 113" stroke="#1a1510" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M 104 113 Q 118 110 134 116" stroke="#1a1510" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <!-- 눈: 처진 눈 + 하이라이트 (차분하고 멋진 인상) -->
+                        <ellipse cx="74" cy="136" rx="10" ry="7" fill="#1a1510"/>
+                        <ellipse cx="126" cy="136" rx="10" ry="7" fill="#1a1510"/>
+                        <ellipse cx="74" cy="134" rx="3" ry="2.5" fill="#fff"/>
+                        <ellipse cx="126" cy="134" rx="3" ry="2.5" fill="#fff"/>
+                        <path d="M 64 136 Q 74 144 84 136" stroke="#1a1510" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <path d="M 116 136 Q 126 144 136 136" stroke="#1a1510" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <!-- 코 - 정교하게 -->
+                        <path d="M 100 146 L 96 170 Q 100 173 104 170 Z" fill="#c4956a"/>
+                        <path d="M 100 148 L 100 168" stroke="#b8957a" stroke-width="1" fill="none" opacity="0.5"/>
+                        <!-- 입 - 은은한 미소 -->
+                        <path d="M 84 180 Q 100 185 116 180" stroke="#7a5c2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+                        <!-- 귀 -->
+                        <ellipse cx="44" cy="130" rx="5" ry="10" fill="url(#skinGradient)"/>
+                        <ellipse cx="156" cy="130" rx="5" ry="10" fill="url(#skinGradient)"/>
+                    </svg>
+                </div>
+                
+                <!-- 정보 영역 -->
+                <div class="info-section">
+                    <h1 class="name">전석진</h1>
+                    <p class="job">KT IT 관리자</p>
+                    <p class="intro">안정적인 IT 인프라로 비즈니스 성장을 지원합니다</p>
+                    
+                    <div class="contact-divider"></div>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:seokjin.jeon@kt.com" class="contact-item">
+                            <span class="icon">✉</span>
+                            <span>seokjin.jeon@kt.com</span>
+                        </a>
+                        <a href="tel:010-4877-7352" class="contact-item">
+                            <span class="icon">📱</span>
+                            <span>010-4877-7352</span>
+                        </a>
+                        <a href="https://www.youtube.com/@ai-study" target="_blank" rel="noopener noreferrer" class="contact-item contact-item-youtube">
+                            <span class="icon icon-youtube">
+                                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </span>
+                            <span>YouTube @ai-study</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 장식 요소 -->
+            <div class="card-accent"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
